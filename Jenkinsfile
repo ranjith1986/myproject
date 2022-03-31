@@ -5,7 +5,7 @@ pipeline {
       steps {
         echo '********* Build Stage Started **********'
         
-        bat 'python -m pyinstaller myapp.py'
+        bat 'pyinstaller myapp.py'
         echo '********* Build Stage Finished **********'
         }
     }
