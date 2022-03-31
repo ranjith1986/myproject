@@ -5,7 +5,7 @@ pipeline {
       steps {
         echo '********* Build Stage Started **********'
         
-        bat 'C:/ProgramData/Jenkins/.jenkins/workspace/mypipeline/myapp.py'
+        bat 'C:/Users/86ran/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Python 3.10/myapp.py'
         echo '********* Build Stage Finished **********'
         }
     }
