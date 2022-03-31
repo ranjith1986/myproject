@@ -5,7 +5,7 @@ pipeline {
       steps {
         echo '********* Build Stage Started **********'
         
-        bat 'myapp.py'
+        bat 'python myapp.py'
         echo '********* Build Stage Finished **********'
         }
     }
