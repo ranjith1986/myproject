@@ -4,8 +4,8 @@ pipeline {
     stage('Build Stage') {
       steps {
         echo '********* Build Stage Started **********'
-        
-        bat 'C:/Users/86ran/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Python 3.10/myapp.py'
+        PATH='C:/Users/86ran/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Python/Python 3.10.exe'
+        bat '$PATH myapp.py'
         echo '********* Build Stage Finished **********'
         }
     }
