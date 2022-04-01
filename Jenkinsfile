@@ -4,7 +4,7 @@ pipeline {
     stage('Build Stage') {
       steps {
         echo '********* Build Stage Started **********'
-        sh 'python3.10 myapp.py'
+        bat 'python3.10 myapp.py'
         echo '********* Build Stage Finished **********'
         }
     }
