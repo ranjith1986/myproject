@@ -5,14 +5,14 @@ pipeline {
     stage('Build Stage') {
       steps {
         echo '********* Build Stage Started **********'
-        bat 'myapp.py'
+        bat 'python myapp.py'
         echo '********* Build Stage Finished **********'
         }
     }
     stage('Testing Stage') {
       steps {
         echo '********* Test Stage Started **********'
-        bat 'py.test'
+        bat 'python py.test'
         echo '********* Test Stage Finished **********'
       }   
     }
