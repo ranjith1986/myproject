@@ -1,6 +1,8 @@
 pipeline {
   agent any
-
+  environment{
+  PATH="C:\Users\86ran\AppData\Local\Programs\Python\Python310\"
+  }
   stages{ 
     stage('Build Stage') {
       steps {
