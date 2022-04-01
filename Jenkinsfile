@@ -1,7 +1,6 @@
 pipeline {
   agent any
-  assoc .py=Python.File
-  ftype Python.File="C:/Users/86ran/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Python 3.10/"
+
   stages{ 
     stage('Build Stage') {
       steps {
