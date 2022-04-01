@@ -14,7 +14,7 @@ pipeline {
     stage('Testing Stage') {
       steps {
         echo '********* Test Stage Started **********'
-        bat 'python py.test'
+        bat '''python test_myapp.py'''
         echo '********* Test Stage Finished **********'
       }   
     }
