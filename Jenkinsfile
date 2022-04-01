@@ -7,7 +7,7 @@ pipeline {
     stage('Build Stage') {
       steps {
         echo '********* Build Stage Started **********'
-        bat '''python myapp.py'''
+        bat '''pip install flask'''
         echo '********* Build Stage Finished **********'
         }
     }
