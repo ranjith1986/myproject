@@ -20,13 +20,7 @@ pipeline {
       }   
     }
     
-    stage('This is Deploy Stage') {
-      steps {
-        echo '********* Test Stage Started **********'
-        git push heroku master
-        echo '********* Test Stage Finished **********'
-      }   
-    }
+    
   }
 
 }
