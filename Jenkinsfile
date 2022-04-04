@@ -32,7 +32,7 @@ pipeline {
     
     stage('Deploy'){
       steps{
-        echo '********* Deployment  Started ***********'
+        echo '********* Deployment   Started ***********'
       echo '********* Deployment Finished ***********'
        }
     }
