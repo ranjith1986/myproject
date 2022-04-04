@@ -30,6 +30,12 @@ pipeline {
       }   
     }
     
+    stage('Scan with Probely') {
+            steps {
+                probelyScan targetId: '4B5nxovDynbf', credentialsId: 'Probely-API', waitForScan: true, stopIfFailed: true, failThreshold: 'medium'
+            }
+         }
+    
     stage('Deploy'){
       steps{
         echo '********* Deployment   Started ***********'
