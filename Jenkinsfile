@@ -8,6 +8,7 @@ pipeline {
       steps {
         echo '********* Build Stage Started **********'
         bat '''pip install flask'''
+        bat '''pyinstaller myapp.py'''
         echo '********* Build Stage Finished **********'
         }
     }
