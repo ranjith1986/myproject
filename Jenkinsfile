@@ -6,7 +6,7 @@ pipeline {
   stages{ 
     stage('This is Build Stage') {
       steps {
-        echo '********* Build Stage Started ***********'
+        echo '********* Build Stage Started using Pyinstaller ***********'
         bat '''pip install flask'''
         bat '''pyinstaller myapp.py'''
         echo '********* Build Stage Finished ***********'
