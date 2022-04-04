@@ -5,7 +5,7 @@ pipeline {
   }
   stages{ 
     
-        stage('Clean Reports')
+        stage('Clean working Directory')
     {
       steps{
         echo '********* Cleaning Workspace Stage Started **********'
@@ -14,7 +14,7 @@ pipeline {
       }
     }
     
-    stage('This is Build Stage') {
+    stage('Build') {
       steps {
         echo '********* Build Stage Started  ***********'
         bat '''pip install flask'''
@@ -22,7 +22,7 @@ pipeline {
         echo '********* Build Stage Finished ***********'
         }
     }
-    stage('This is Testing Stage') {
+    stage('Testing') {
       steps {
         echo '********* Test Stage Started **********'
         bat '''pytest'''
