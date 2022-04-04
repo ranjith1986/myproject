@@ -31,8 +31,8 @@ pipeline {
     }
     
     stage('Deploy - Production'){
-        echo '********* Deployment Started **********'
-      echo '********* Deployment Finished **********'
+        echo '********* Deployment Started ***********'
+      echo '********* Deployment Finished ***********'
        }
     }
     
