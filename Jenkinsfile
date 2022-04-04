@@ -9,7 +9,7 @@ pipeline {
     {
       steps{
         echo '********* Cleaning Workspace Stage Started **********'
-        bat 'rmdir /s /q myapp'
+        bat 'rmdir /s /q dist'
         echo '********* Cleaning Workspace Stage Finished **********'
       }
     }
