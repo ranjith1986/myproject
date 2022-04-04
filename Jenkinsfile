@@ -4,6 +4,16 @@ pipeline {
   PATH="C:/Users/86ran/AppData/Local/Programs/Python/Python310/;C:/WINDOWS/SYSTEM32;C:/Users/86ran/AppData/Local/Programs/Python/Python310/Scripts"
   }
   stages{ 
+    
+        stage('Clean Reports')
+    {
+      steps{
+        echo '********* Cleaning Workspace Stage Started **********'
+        bat 'rmdir /s /q myapp'
+        echo '********* Cleaning Workspace Stage Finished **********'
+      }
+    }
+    
     stage('This is Build Stage') {
       steps {
         echo '********* Build Stage Started  ***********'
