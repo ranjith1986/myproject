@@ -30,8 +30,7 @@ pipeline {
       }   
     }
     
-    stage('Deploy - Production') {
-      steps{
+    stage('Deploy - Production'){
        withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: '86.ranjith@gmail.com', usernameVariable: 'ranjith1986', passwordVariable: 'Pass@mar22']]) {
        bat 'git push https://${ranjith1986}:${Pass@mar22}@git.heroku.com/ranjithtestapp.git HEAD:refs/heads/master')
        }
