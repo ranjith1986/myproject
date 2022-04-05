@@ -39,6 +39,7 @@ pipeline {
     stage('Deploy'){
       steps{
         echo '********* Deployment   Started ***********'
+        bat '''python myapp.py'''
       echo '********* Deployment Finished ***********'
        }
     }
