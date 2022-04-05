@@ -39,7 +39,9 @@ pipeline {
     stage('Deploy'){
       steps{
         echo '********* Deployment   Started ***********'
+        timeout(time : 1, unit : 'MINUTES'){
         bat '''python myapp.py'''
+        }
       echo '********* Deployment Finished ***********'
        }
     }
