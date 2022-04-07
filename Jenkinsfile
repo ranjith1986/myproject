@@ -26,7 +26,6 @@ pipeline {
       steps {
         echo '********* Test Stage Started **********'
         bat '''pytest'''
-        bat '''pylint myapp.py'''
         echo '********* Test Stage Finished **********'
       }   
     }
