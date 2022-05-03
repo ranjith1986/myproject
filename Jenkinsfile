@@ -26,7 +26,7 @@ pipeline {
       steps {
         echo '********* Test Stage Started **********'
         bat '''pytest'''
-        echo '********* Test Stage Finished **********'
+        echo '********* Test Stage Finished ************'
       }   
     }
     
