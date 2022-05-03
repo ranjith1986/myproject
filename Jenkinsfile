@@ -8,9 +8,9 @@ pipeline {
         stage('Clean working Directory')
     {
       steps{
-        echo '********* Cleaning Workspace Stage Started **********'
+        echo '********* Cleaning Workspace Stage Started ************'
         bat 'rmdir /s /q dist'
-        echo '********* Cleaning Workspace Stage Finished **********'
+        echo '********* Cleaning Workspace Stage Finished ************'
       }
     }
     
